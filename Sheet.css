@@ -1,0 +1,123 @@
+html {
+    background-image:linear-gradient(#818181,#414141);
+    color: rgba(0, 0, 0, 0.541);
+    text-align: center;
+    text-shadow: 1px 1px 0px #cacaca;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.child {
+    background-image: linear-gradient(to bottom right, #b9b9b9, #777777);
+    flex: 33%;
+    border: #414141 solid;
+    border-radius: 5px;
+}
+
+section {
+    flex: 1;
+    width: 33%;
+}
+
+section.basics {
+    display: flex;
+    width: 100%;
+
+}
+
+section.health {
+    flex: 1;
+}
+
+section.health input {
+    border-color: #e60d0d;
+}
+
+section.mana {
+    flex: 1;
+}
+
+section.mana input {
+    border-color: #2f51c0;
+}
+
+section.stamina {
+    flex: 1;
+}
+
+section.stamina input {
+    border-color: #1e9b25;
+}
+
+.header {
+    width: 100%;
+    display: flex;
+}
+
+.clearbox {
+    visibility: hidden;
+    clear: both;
+}
+
+table {
+    margin: auto;
+    width: 100%;
+}
+
+input, #name, #race, #profession {
+    width: 75%;
+    height: 20px;
+    background: radial-gradient(rgb(133, 133, 133),rgba(0, 0, 0, 0.253));
+    border: #414141;
+    box-sizing: border-box;
+    border: 2px solid #414141;
+    border-radius: 5px;
+    resize:none;
+    color: rgb(0, 0, 0);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-shadow: 1px 1px 0px #cacaca81;
+    margin-bottom: 1%
+}
+
+.header input {
+    width: 150px;
+}
+
+input.essenceName {
+    width: 40%;
+    margin-bottom: 1%;
+}
+
+textarea {
+    width: 75%;
+    height: 80px;
+    background: radial-gradient(rgb(148, 148, 148),rgba(0, 0, 0, 0.349));
+    border: #414141;
+    box-sizing: border-box;
+    border: 2px solid #414141;
+    border-radius: 5px;
+    resize:none;
+    color: rgb(0, 0, 0);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-shadow: 1px 1px 0px #cacaca81;
+}
+
+textarea.startingSkills {
+    height: 500px;
+}
+
+#inventory {
+    height: 200px;
+}
+
+btn {
+    background: #cacaca;
+    border: #414141 solid 2px;
+    border-radius: 5px;
+    padding: 1px;
+}
