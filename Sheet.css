@@ -19,40 +19,89 @@ html {
     border-radius: 5px;
 }
 
-section {
-    flex: 1;
-    width: 33%;
+
+
+@media (min-width: 1500px) {
+
+    section {
+        flex: 1;
+    }
+
+    section.container {
+        flex-flow: column;
+    }
+
+    section.basics {
+        display: flex;
+        width: 100%;
+        flex-flow:wrap;
+        justify-content: space-evenly;
+    
+    }
+
+    section.basicsChild {
+        flex: 1;
+        flex-direction: column;
+    }
+    
+    section.health input {
+        border-color: #e60d0d;
+    }
+    
+    
+    section.mana input {
+        border-color: #2f51c0;
+    }
+    
+    
+    section.stamina input {
+        border-color: #1e9b25;
+    }
+
+    btn{
+        height: 20px;
+    }
+
 }
 
-section.basics {
-    display: flex;
-    width: 100%;
+@media (max-width:1499px) {
+    
+    .header {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    section.basics {
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+        flex: 1;
+    }
+
+    section {
+        flex: 1;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    
+    section.health input {
+        border-color: #e60d0d;
+    }
+    
+    
+    section.mana input {
+        border-color: #2f51c0;
+    }
+    
+    
+    section.stamina input {
+        border-color: #1e9b25;
+    }
 
 }
 
-section.health {
-    flex: 1;
-}
 
-section.health input {
-    border-color: #e60d0d;
-}
-
-section.mana {
-    flex: 1;
-}
-
-section.mana input {
-    border-color: #2f51c0;
-}
-
-section.stamina {
-    flex: 1;
-}
-
-section.stamina input {
-    border-color: #1e9b25;
-}
 
 .header {
     width: 100%;
@@ -70,11 +119,9 @@ table {
 }
 
 input, #name, #race, #profession {
-    width: 75%;
     height: 20px;
     background: radial-gradient(rgb(133, 133, 133),rgba(0, 0, 0, 0.253));
     border: #414141;
-    box-sizing: border-box;
     border: 2px solid #414141;
     border-radius: 5px;
     resize:none;
@@ -82,6 +129,10 @@ input, #name, #race, #profession {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-shadow: 1px 1px 0px #cacaca81;
     margin-bottom: 1%
+}
+
+input {
+    width: 75%;
 }
 
 .header input {
@@ -108,7 +159,7 @@ textarea {
 }
 
 textarea.startingSkills {
-    height: 500px;
+    height: 680px;
 }
 
 #inventory {

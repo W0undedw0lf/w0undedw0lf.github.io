@@ -39,6 +39,8 @@ const parameterNames = [
     "racialFourText",
     "racialFiveName",
     "racialFiveText",
+    "racialSixName",
+    "racialSixText",
     "skillsName",
     "skillsText",
     "spiritEssenceName",

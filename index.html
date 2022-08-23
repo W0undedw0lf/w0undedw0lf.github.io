@@ -10,32 +10,40 @@
 </head>
 <body>
     <div class="child header">
-        <section>
-            <h1>Isekai World Character Sheet</h1>
-            <div>
+        <section class="container">
+            <section class="basics">
+                <h1>Isekai World Character Sheet</h1>
+            </section>
+            <section class="basics">
                 <btn onclick="setLocalStorage();">Save</btn>
                 <btn onclick="getStoredValues();">Load</btn>
-            </div>
+            </section>
             <section class="basics">
-            <section class="health">
+            <section class="basicsChild">
                 <p>Name</p>
                 <input id="name" type="text">
+            </section>
+            <section class="basicsChild">
+                <p>Race</p>
+                <input id="race" type="text">
+            </section>
+            <section class="basicsChild">
+                <p>Profession</p>
+                <input id="profession" type="text">
+            </section>
+            <section class="basicsChild health">
                 <p>Health</p>
                 <input id="healthCurrent" placeholder="Current" type="number">
                 <input id="healthMax" placeholder="Max" type="number">
                 <input id="healthTemp" placeholder="Temp" type="number">
             </section>
-            <section class="mana">
-                <p>Race</p>
-                <input id="race" type="text">
+            <section class="basicsChild mana">
                 <p>Mana</p>
                 <input id="manaCurrent" placeholder="Current" type="number">
                 <input id="manaMax" placeholder="Max" type="number">
                 <input id="manaTemp" placeholder="Temp" type="number">
             </section>
-            <section class="stamina">
-                <p>Profession</p>
-                <input id="profession" type="text">
+            <section class="basicsChild stamina">
                 <p>Stamina</p>
                 <input id="staminaCurrent" placeholder="Current" type="number">
                 <input id="staminaMax" placeholder="Max" type="number">
@@ -82,6 +90,8 @@
                 <textarea id="racialFourText"></textarea>
                 <input id="racialFiveName" type="text">
                 <textarea id="racialFiveText"></textarea>
+                <input id="racialSixName" type="text">
+                <textarea id="racialSixText"></textarea>
             <p class="clearbox">!</p>
         </div>
         <div class="child">
