@@ -43,23 +43,16 @@ html {
         flex: 1;
         flex-direction: column;
     }
-    
-    section.health input {
-        border-color: #e60d0d;
-    }
-    
-    
-    section.mana input {
-        border-color: #2f51c0;
-    }
-    
-    
-    section.stamina input {
-        border-color: #1e9b25;
-    }
 
     btn{
         height: 20px;
+    }
+
+    .child {
+        background-image: linear-gradient(to bottom right, #b9b9b9, #777777);
+        flex: 33%;
+        border: #414141 solid;
+        border-radius: 5px;
     }
 
 }
@@ -84,22 +77,47 @@ html {
         flex-direction: column;
         flex-wrap: wrap;
     }
-    
-    section.health input {
-        border-color: #e60d0d;
-    }
-    
-    
-    section.mana input {
-        border-color: #2f51c0;
-    }
-    
-    
-    section.stamina input {
-        border-color: #1e9b25;
-    }
 
 }
+
+@media (max-width:900px) {
+    .container {
+        flex-flow: column;
+    }
+}
+
+@media (max-width:500px) {
+
+    .header {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    section.basicsChild {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+    }
+
+    section {
+        flex: 1;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .child {
+        background-image: linear-gradient(to bottom right, #b9b9b9, #777777);
+        flex: 1;
+        border: #414141 solid;
+        border-radius: 5px;
+    }
+}
+
 
 
 
@@ -171,4 +189,18 @@ btn {
     border: #414141 solid 2px;
     border-radius: 5px;
     padding: 1px;
+}
+
+section.health input {
+    border-color: #e60d0d;
+}
+
+
+section.mana input {
+    border-color: #2f51c0;
+}
+
+
+section.stamina input {
+    border-color: #1e9b25;
 }
