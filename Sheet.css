@@ -20,10 +20,12 @@ html {
 }
 
 .header {
-    width: 100%;
     display: flex;
     flex-direction: row;
     padding: 1%;
+    background-image: linear-gradient(to bottom right, #b9b9b9, #777777);
+    border: #414141 solid;
+    border-radius: 5px;
 }
 
 
@@ -35,23 +37,21 @@ html {
 
     section.container {
         flex-flow: column;
+        align-items: center;
     }
 
     section.basics {
         display: flex;
         width: 100%;
         flex-flow:wrap;
-        justify-content: space-evenly;
+        justify-content:center;
+        align-items: center;
     
     }
 
     section.basicsChild {
         flex: 1;
         flex-direction: column;
-    }
-
-    btn{
-        height: 20px;
     }
 
     .child {
@@ -66,7 +66,6 @@ html {
 @media (max-width:1499px) {
     
     .header {
-        width: 100%;
         display: flex;
         flex-direction: column;
     }
@@ -76,6 +75,11 @@ html {
         width: 100%;
         flex-wrap: wrap;
         flex: 1;
+        align-items: center;
+    }
+
+    section.container {
+        align-items: center;
     }
 
     section {
@@ -90,12 +94,15 @@ html {
     .container {
         flex-flow: column;
     }
+
+    section.container {
+        align-items: center;
+    }
 }
 
 @media (max-width:500px) {
 
     .header {
-        width: 100%;
         display: flex;
         flex-direction: column;
     }
@@ -103,6 +110,10 @@ html {
     section.basicsChild {
         display: flex;
         flex-flow: column;
+        align-items: center;
+    }
+
+    section.container {
         align-items: center;
     }
 
@@ -151,7 +162,7 @@ a {
     clear: both;
 }
 
-input, #name, #race, #profession {
+input {
     height: 20px;
     background: radial-gradient(rgb(133, 133, 133),rgba(0, 0, 0, 0.253));
     border: #414141;
@@ -164,7 +175,7 @@ input, #name, #race, #profession {
     margin-bottom: 1%
 }
 
-input {
+input.title {
     width: 75%;
 }
 
@@ -199,11 +210,12 @@ textarea.startingSkills {
     height: 200px;
 }
 
-btn {
+input.button {
     background: #cacaca;
     border: #414141 solid 2px;
     border-radius: 5px;
     padding: 1px;
+    width: 50px;
 }
 
 section.health input {
@@ -218,4 +230,13 @@ section.mana input {
 
 section.stamina input {
     border-color: #1e9b25;
+}
+
+#diceResult {
+    color: #ebebeb;
+    text-shadow: 2px 2px 0px #414141;
+}
+
+#diceAmount, #diceSize, #diceBonus {
+    width: 75px;
 }

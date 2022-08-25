@@ -20,14 +20,14 @@
         </section>
         <p class="clearbox">!</p>
     </header>
-    <div class="child header">
+    <div class="header">
         <section class="container">
             <section class="basics">
                 <h1>Isekai World Character Sheet</h1>
             </section>
             <section class="basics">
-                <btn onclick="setLocalStorage();">Save</btn>
-                <btn onclick="getStoredValues();">Load</btn>
+                <input class="button" type="button" value="Save" onclick="setLocalStorage();">
+                <input class="button" type="button" value="Load" onclick="getStoredValues();">
             </section>
             <section class="basics">
             <section class="basicsChild">
@@ -76,14 +76,22 @@
                 <input id="diceRollThree" type="text"><br>
                 <input id="diceNameFour" type="text">
                 <input id="diceRollFour" type="text"><br>
-                <input id="diceNameFive" type="text">
+                
+                <input id="diceAmount" placeholder="# of Dice" type="number">
+                <input id="diceSize" placeholder="# of Faces" type="number">
+                <input id="diceBonus" placeholder="+ #" type="number">
+                <input class="button" id="diceRoller" type="button" value="Roll" onclick="rollDice()">
+                <p id="diceResult">?</p>
+
+
+                <!-- <input id="diceNameFive" type="text">
                 <input id="diceRollFive" type="text"><br>
                 <input id="diceNameSix" type="text">
                 <input id="diceRollSix" type="text"><br>
                 <input id="diceNameSeven" type="text">
                 <input id="diceRollSeven" type="text"><br>
                 <input id="diceNameEight" type="text">
-                <input id="diceRollEight" type="text"><br>
+                <input id="diceRollEight" type="text"><br> -->
         </section>
         <p class="clearbox">!</p>
     </div>
@@ -91,84 +99,84 @@
         <div class="child">
             <h1>Racial Features</h1>
             <input class="essenceName" id="raceName" type="text">
-                <input id="racialOneName" type="text">
+                <input class="title" id="racialOneName" type="text">
                 <textarea id="racialOneText"></textarea>
-                <input id="racialTwoName" type="text">
+                <input class="title" id="racialTwoName" type="text">
                 <textarea id="racialTwoText"></textarea>
-                <input id="racialThreeName" type="text">
+                <input class="title" id="racialThreeName" type="text">
                 <textarea id="racialThreeText"></textarea>
-                <input id="racialFourName" type="text">
+                <input class="title" id="racialFourName" type="text">
                 <textarea id="racialFourText"></textarea>
-                <input id="racialFiveName" type="text">
+                <input class="title" id="racialFiveName" type="text">
                 <textarea id="racialFiveText"></textarea>
-                <input id="racialSixName" type="text">
+                <input class="title" id="racialSixName" type="text">
                 <textarea id="racialSixText"></textarea>
             <p class="clearbox">!</p>
         </div>
         <div class="child">
             <h1>Skills</h1>
             <input class="essenceName" type="text">
-                <input id="skillsName" type="text">
+                <input class="title" id="skillsName" type="text">
                 <textarea class="startingSkills" id="skillsText"></textarea>
             <p class="clearbox">!</p>
         </div>
         <div class="child">
             <h1> Spirit Essence</h1>
             <input class="essenceName" id="spiritEssenceName" type="text">
-                <input id="spiritEssenceAbilityNameOne" type="text">
+                <input class="title" id="spiritEssenceAbilityNameOne" type="text">
                 <textarea id="spiritEssenceAbilityTextOne"></textarea>
-                <input id="spiritEssenceAbilityNameTwo" type="text">
+                <input class="title" id="spiritEssenceAbilityNameTwo" type="text">
                 <textarea id="spiritEssenceAbilityTextTwo"></textarea>
-                <input id="spiritEssenceAbilityNameThree" type="text">
+                <input class="title" id="spiritEssenceAbilityNameThree" type="text">
                 <textarea id="spiritEssenceAbilityTextThree"></textarea>
-                <input id="spiritEssenceAbilityNameFour" type="text">
+                <input class="title" id="spiritEssenceAbilityNameFour" type="text">
                 <textarea id="spiritEssenceAbilityTextFour"></textarea>
-                <input id="spiritEssenceAbilityNameFive" type="text">
+                <input class="title" id="spiritEssenceAbilityNameFive" type="text">
                 <textarea id="spiritEssenceAbilityTextFive"></textarea>
             <p class="clearbox">!</p>
         </div>
         <div class="child">
             <h1>Recovery Essence</h1>
             <input class="essenceName" id="recoveryEssenceName" type="text">
-                <input id="recoveryEssenceAbilityNameOne" type="text">
+                <input class="title" id="recoveryEssenceAbilityNameOne" type="text">
                 <textarea id="recoveryEssenceAbilityTextOne"></textarea>
-                <input id="recoveryEssenceAbilityNameTwo" type="text">
+                <input class="title" id="recoveryEssenceAbilityNameTwo" type="text">
                 <textarea id="recoveryEssenceAbilityTextTwo"></textarea>
-                <input id="recoveryEssenceAbilityNameThree" type="text">
+                <input class="title" id="recoveryEssenceAbilityNameThree" type="text">
                 <textarea id="recoveryEssenceAbilityTextThree"></textarea>
-                <input id="recoveryEssenceAbilityNameFour" type="text">
+                <input class="title" id="recoveryEssenceAbilityNameFour" type="text">
                 <textarea id="recoveryEssenceAbilityTextFour"></textarea>
-                <input id="recoveryEssenceAbilityNameFive" type="text">
+                <input class="title" id="recoveryEssenceAbilityNameFive" type="text">
                 <textarea id="recoveryEssenceAbilityTextFive"></textarea>
             <p class="clearbox">!</p>
         </div>
         <div class="child">
             <h1>Speed Essence</h1>
             <input class="essenceName" id="speedEssenceName" type="text">
-                <input id="speedEssenceAbilityNameOne" type="text">
+                <input class="title" id="speedEssenceAbilityNameOne" type="text">
                 <textarea id="speedEssenceAbilityTextOne"></textarea>
-                <input id="speedEssenceAbilityNameTwo" type="text">
+                <input class="title" id="speedEssenceAbilityNameTwo" type="text">
                 <textarea id="speedEssenceAbilityTextTwo"></textarea>
-                <input id="speedEssenceAbilityNameThree" type="text">
+                <input class="title" id="speedEssenceAbilityNameThree" type="text">
                 <textarea id="speedEssenceAbilityTextThree"></textarea>
-                <input id="speedEssenceAbilityNameFour" type="text">
+                <input class="title" id="speedEssenceAbilityNameFour" type="text">
                 <textarea id="speedEssenceAbilityTextFour"></textarea>
-                <input id="speedEssenceAbilityNameFive" type="text">
+                <input class="title" id="speedEssenceAbilityNameFive" type="text">
                 <textarea id="speedEssenceAbilityTextFive"></textarea>
             <p class="clearbox">!</p>
         </div>
         <div class="child">
             <h1>Power Essence</h1>
             <input class="essenceName" id="powerEssenceName" type="text">
-                <input id="powerEssenceAbilityNameOne" type="text">
+                <input class="title" id="powerEssenceAbilityNameOne" type="text">
                 <textarea id="powerEssenceAbilityTextOne"></textarea>
-                <input id="powerEssenceAbilityNameTwo" type="text">
+                <input class="title" id="powerEssenceAbilityNameTwo" type="text">
                 <textarea id="powerEssenceAbilityTextTwo"></textarea>
-                <input id="powerEssenceAbilityNameThree" type="text">
+                <input class="title" id="powerEssenceAbilityNameThree" type="text">
                 <textarea id="powerEssenceAbilityTextThree"></textarea>
-                <input id="powerEssenceAbilityNameFour" type="text">
+                <input class="title" id="powerEssenceAbilityNameFour" type="text">
                 <textarea id="powerEssenceAbilityTextFour"></textarea>
-                <input id="powerEssenceAbilityNameFive" type="text">
+                <input class="title" id="powerEssenceAbilityNameFive" type="text">
                 <textarea id="powerEssenceAbilityTextFive"></textarea>
             <p class="clearbox">!</p>
         </div>

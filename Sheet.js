@@ -20,14 +20,6 @@ const parameterNames = [
     "diceRollThree",
     "diceNameFour",
     "diceRollFour",
-    "diceNameFive",
-    "diceRollFive",
-    "diceNameSix",
-    "diceRollSix",
-    "diceNameSeven",
-    "diceRollSeven",
-    "diceNameEight",
-    "diceRollEight",
     "raceName",
     "racialOneName",
     "racialOneText",
@@ -117,4 +109,32 @@ function setLocalStorage() {
             localStorage.setItem(parameter, parameterInputElement.value);
         }
     });
+}
+
+// Dice Roll button listener
+// document.querySelector('#diceRoller').addEventListener('click', rollDice)
+
+let diceRolls = [];
+
+// Rolls the one Dice with optional bonus
+function diceRoller() {
+    let diceSize = document.getElementById('diceSize').value
+    let diceBonus = document.getElementById('diceBonus').value
+    let rng = parseInt((Math.random()*diceSize)+1)
+    return Number(rng) + Number(diceBonus)
+}
+
+function showResults(valueToPassIn) {
+    document.querySelector('#diceResult').innerText = valueToPassIn;
+}
+
+function rollDice() {
+    let diceAmount = document.getElementById('diceAmount').value
+    for (let i = 0; i < diceAmount; i=i+1) {
+        diceRolls[i] = diceRoller();
+    }
+
+    const outputOfDiceRolls = diceRolls.join(', ');
+    showResults(outputOfDiceRolls);
+    diceRolls = []
 }
