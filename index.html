@@ -5,162 +5,67 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="Sheet.css">
-    <script type="text/javascript" src="Sheet.js"></script>
+    <link rel="stylesheet" href="stylesheet.css">
 </head>
 <body>
-    <div class="child header">
-        <section class="container">
-            <section class="basics">
-                <h1>Isekai World Character Sheet</h1>
-            </section>
-            <section class="basics">
-                <btn onclick="setLocalStorage();">Save</btn>
-                <btn onclick="getStoredValues();">Load</btn>
-            </section>
-            <section class="basics">
-            <section class="basicsChild">
-                <p>Name</p>
-                <input id="name" type="text">
-            </section>
-            <section class="basicsChild">
-                <p>Race</p>
-                <input id="race" type="text">
-            </section>
-            <section class="basicsChild">
-                <p>Profession</p>
-                <input id="profession" type="text">
-            </section>
-            <section class="basicsChild health">
-                <p>Health</p>
-                <input id="healthCurrent" placeholder="Current" type="number">
-                <input id="healthMax" placeholder="Max" type="number">
-                <input id="healthTemp" placeholder="Temp" type="number">
-            </section>
-            <section class="basicsChild mana">
-                <p>Mana</p>
-                <input id="manaCurrent" placeholder="Current" type="number">
-                <input id="manaMax" placeholder="Max" type="number">
-                <input id="manaTemp" placeholder="Temp" type="number">
-            </section>
-            <section class="basicsChild stamina">
-                <p>Stamina</p>
-                <input id="staminaCurrent" placeholder="Current" type="number">
-                <input id="staminaMax" placeholder="Max" type="number">
-                <input id="staminaTemp" placeholder="Temp" type="number">
-            </section>
-            </section>
-        </section>
+    <header>
+        <h1>Isekai World</h1>
         <section>
-            <h2>Inventory</h2>
-            <textarea id="inventory"></textarea>
-        </section>
-        <section>
-            <h2>Dice Rolls</h2>
-                <input id="diceNameOne" type="text">
-                <input id="diceRollOne" type="text"><br>
-                <input id="diceNameTwo" type="text">
-                <input id="diceRollTwo" type="text"><br>
-                <input id="diceNameThree" type="text">
-                <input id="diceRollThree" type="text"><br>
-                <input id="diceNameFour" type="text">
-                <input id="diceRollFour" type="text"><br>
-                <input id="diceNameFive" type="text">
-                <input id="diceRollFive" type="text"><br>
-                <input id="diceNameSix" type="text">
-                <input id="diceRollSix" type="text"><br>
-                <input id="diceNameSeven" type="text">
-                <input id="diceRollSeven" type="text"><br>
-                <input id="diceNameEight" type="text">
-                <input id="diceRollEight" type="text"><br>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="rules.html">Rules</a></li>
+                <li><a href="Sheet.html">Character Sheet</a></li>
+            </ul>
         </section>
         <p class="clearbox">!</p>
-    </div>
+    </header>
     <div class="container">
-        <div class="child">
-            <h1>Racial Features</h1>
-            <input class="essenceName" id="raceName" type="text">
-                <input id="racialOneName" type="text">
-                <textarea id="racialOneText"></textarea>
-                <input id="racialTwoName" type="text">
-                <textarea id="racialTwoText"></textarea>
-                <input id="racialThreeName" type="text">
-                <textarea id="racialThreeText"></textarea>
-                <input id="racialFourName" type="text">
-                <textarea id="racialFourText"></textarea>
-                <input id="racialFiveName" type="text">
-                <textarea id="racialFiveText"></textarea>
-                <input id="racialSixName" type="text">
-                <textarea id="racialSixText"></textarea>
-            <p class="clearbox">!</p>
+        <div class="sidebarLeft">
+            <h2>Campaign Landing Page</h2>
+            <h4>Welcome...</h4><p>...to the portal to a world beyond! Here you will find everything you need to use the Isekai Rule System homebrewed by Chris. Enjoy and explore the website!</p>
+            <p class="footer">Brent 8.24.2022</p>
         </div>
-        <div class="child">
-            <h1>Skills</h1>
-            <input class="essenceName" type="text">
-                <input id="skillsName" type="text">
-                <textarea class="startingSkills" id="skillsText"></textarea>
-            <p class="clearbox">!</p>
+        <div class="main">
+            <div class="child">
+                <article>
+                    <h2>New Site Launched!</h2>
+                    <p>Hey guys! I've gone and expanded the webpage a bit to hold more than just the character sheet should we need it. I'm not sure what else we'll need in the future, but for now I've just copy and pasted the rules from the google doc and included it in the "Rules" page you can find in the header.</p>
+                    <p>If theres something you'd like to see added in the future, please let me know. Here are some of the ideas I've got for the future:</p>
+                    <ul>
+                        <li>Expand the functionality of the Chracter Sheet.</li>
+                        <p>This is my primary concern as it was what I set out to make when I started developing this page.</p>
+                        <li>(Interactive?) Map</li>
+                        <p>Not sure how I'd do this but goals direct research.</p>
+                        <li>Dice Roller</li>
+                        <p>This seems like a natural progression. I've got a basic one working, but I need to figure out how to roll several dice at once and print individual results.</p>
+                        <li>Blog?</li>
+                        <p>This is less development concerned but I'd be happy to post articles if other people want to write them. Just to have a collective place for us to preserve it all.</p>
+                    </ul>
+                    <p>If you have any other ideas or like the sound of anything I listed above, let me know!</p>
+                    <p class="footer">Brent 8.24.2022</p>
+                </article>
+            </div>
         </div>
-        <div class="child">
-            <h1> Spirit Essence</h1>
-            <input class="essenceName" id="spiritEssenceName" type="text">
-                <input id="spiritEssenceAbilityNameOne" type="text">
-                <textarea id="spiritEssenceAbilityTextOne"></textarea>
-                <input id="spiritEssenceAbilityNameTwo" type="text">
-                <textarea id="spiritEssenceAbilityTextTwo"></textarea>
-                <input id="spiritEssenceAbilityNameThree" type="text">
-                <textarea id="spiritEssenceAbilityTextThree"></textarea>
-                <input id="spiritEssenceAbilityNameFour" type="text">
-                <textarea id="spiritEssenceAbilityTextFour"></textarea>
-                <input id="spiritEssenceAbilityNameFive" type="text">
-                <textarea id="spiritEssenceAbilityTextFive"></textarea>
-            <p class="clearbox">!</p>
-        </div>
-        <div class="child">
-            <h1>Recovery Essence</h1>
-            <input class="essenceName" id="recoveryEssenceName" type="text">
-                <input id="recoveryEssenceAbilityNameOne" type="text">
-                <textarea id="recoveryEssenceAbilityTextOne"></textarea>
-                <input id="recoveryEssenceAbilityNameTwo" type="text">
-                <textarea id="recoveryEssenceAbilityTextTwo"></textarea>
-                <input id="recoveryEssenceAbilityNameThree" type="text">
-                <textarea id="recoveryEssenceAbilityTextThree"></textarea>
-                <input id="recoveryEssenceAbilityNameFour" type="text">
-                <textarea id="recoveryEssenceAbilityTextFour"></textarea>
-                <input id="recoveryEssenceAbilityNameFive" type="text">
-                <textarea id="recoveryEssenceAbilityTextFive"></textarea>
-            <p class="clearbox">!</p>
-        </div>
-        <div class="child">
-            <h1>Speed Essence</h1>
-            <input class="essenceName" id="speedEssenceName" type="text">
-                <input id="speedEssenceAbilityNameOne" type="text">
-                <textarea id="speedEssenceAbilityTextOne"></textarea>
-                <input id="speedEssenceAbilityNameTwo" type="text">
-                <textarea id="speedEssenceAbilityTextTwo"></textarea>
-                <input id="speedEssenceAbilityNameThree" type="text">
-                <textarea id="speedEssenceAbilityTextThree"></textarea>
-                <input id="speedEssenceAbilityNameFour" type="text">
-                <textarea id="speedEssenceAbilityTextFour"></textarea>
-                <input id="speedEssenceAbilityNameFive" type="text">
-                <textarea id="speedEssenceAbilityTextFive"></textarea>
-            <p class="clearbox">!</p>
-        </div>
-        <div class="child">
-            <h1>Power Essence</h1>
-            <input class="essenceName" id="powerEssenceName" type="text">
-                <input id="powerEssenceAbilityNameOne" type="text">
-                <textarea id="powerEssenceAbilityTextOne"></textarea>
-                <input id="powerEssenceAbilityNameTwo" type="text">
-                <textarea id="powerEssenceAbilityTextTwo"></textarea>
-                <input id="powerEssenceAbilityNameThree" type="text">
-                <textarea id="powerEssenceAbilityTextThree"></textarea>
-                <input id="powerEssenceAbilityNameFour" type="text">
-                <textarea id="powerEssenceAbilityTextFour"></textarea>
-                <input id="powerEssenceAbilityNameFive" type="text">
-                <textarea id="powerEssenceAbilityTextFive"></textarea>
-            <p class="clearbox">!</p>
+        <div class=sidebarRight>
+            <div class="child">
+                <article>
+                    <h2>Story Feed</h2>
+                    <h3>The Boys are Going to the Sea</h3>
+                    <p>Currently our lads are on their way to the water, and in one month's time, a Tournament for Iron and Bronze Rank Adventurers. Will they survive the walnuts? Will Chris ever find a moment of peace? Will Brent ever finish this site and learn how to make our own dice roller? Doubtful on all accounts ...</p>
+                    <p class="footer">Brent 8.24.2022</p>
+                </article>
+            </div>
         </div>
     </div>
+    <!-- <div>
+        <h2>Images</h2>
+        <img src="img/ElfDragonPortrait1.png">
+        <img src="img/ElfDragonSketches2.png">
+        <img src="img/ElfDragonSketches3.png">
+        <img src="img/ElfDragonSketches4.png">
+        <img src="img/Lorem01.png">
+        <img src="img/loremswinging.jpg">
+        <img src="img/terjon1.jpg">
+    </div> -->
 </body>
 </html>
