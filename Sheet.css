@@ -28,6 +28,17 @@ html {
     border-radius: 5px;
 }
 
+.row {
+    width: 100%;
+    display: flex;
+    flex-flow: row;
+}
+
+.basicsChild {
+    display: flex;
+    align-items: center;
+    margin: 1%;
+}
 
 @media (min-width: 1500px) {
 
@@ -43,7 +54,7 @@ html {
     section.basics {
         display: flex;
         width: 100%;
-        flex-flow:wrap;
+        flex-flow: column wrap;
         justify-content:center;
         align-items: center;
     
@@ -70,7 +81,7 @@ html {
         flex-direction: column;
     }
 
-    section.basics {
+    .basics {
         display: flex;
         width: 100%;
         flex-wrap: wrap;
@@ -78,14 +89,17 @@ html {
         align-items: center;
     }
 
-    section.container {
+    .basicsChild {
+        flex-flow: column;
+    }
+
+    .container {
         align-items: center;
     }
 
     section {
         flex: 1;
-        flex-direction: column;
-        flex-wrap: wrap;
+        flex-flow: column wrap;
     }
 
 }
@@ -100,7 +114,7 @@ html {
     }
 }
 
-@media (max-width:500px) {
+@media (max-width:540px) {
 
     .header {
         display: flex;
@@ -115,6 +129,10 @@ html {
 
     section.container {
         align-items: center;
+    }
+
+    section.row {
+        flex-flow: column;
     }
 
     section {

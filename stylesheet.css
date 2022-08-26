@@ -95,3 +95,22 @@ img.bannerRight {
         display: none;
     }
 }
+
+@media (max-width: 700px) {
+    
+    .container {
+        flex-flow: column;
+    }
+    
+    .sidebarLeft {
+        order: 3;
+    }
+
+    .sidebarRight {
+        order: 2;
+    }
+
+    .main {
+        order: 1;
+    }
+}
