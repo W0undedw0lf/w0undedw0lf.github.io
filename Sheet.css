@@ -29,6 +29,14 @@ html {
     border-radius: 5px;
 }
 
+.summon {
+    padding: 1%;
+    background-image: linear-gradient(to bottom right, #b9b9b9, #777777);
+    border: #414141 solid;
+    border-radius: 5px;
+    width: 97%;
+}
+
 .row {
     width: 100%;
     display: flex;
@@ -195,6 +203,10 @@ input {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-shadow: 1px 1px 0px #cacaca81;
     margin-bottom: 1%
+}
+
+input.statTracker {
+    width: 100%;
 }
 
 input.title {
