@@ -225,7 +225,7 @@ input.essenceName {
 /* Textarea specifics */
 textarea {
     width: 75%;
-    height: 80px;
+    height: 100px;
     background: radial-gradient(rgb(148, 148, 148),rgba(0, 0, 0, 0.349));
     border: #414141;
     box-sizing: border-box;
